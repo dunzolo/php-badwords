@@ -1,3 +1,9 @@
+<?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +14,10 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    
+    <form action="./show.php" method="POST">
+        <input type="text" name="paragraph" id="paragraph" placeholder="Inserisci il contenuto">
+        <input type="text" name="content-sub" id="content-sub" placeholder="Inserisci la parola da nascondere">
+        <button name="submit">Invia</button>
+    </form>
 </body>
 </html>
